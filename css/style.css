@@ -1,0 +1,106 @@
+:root {
+    --colorBlack: #000;
+    --colorWhite: #fff;
+    --colorBackground: #F5F5F5;
+    --colorPrice: #FF0000;
+}
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--colorBlack);
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.banner {
+    height: 600px;
+    width: 300px;
+    margin: 50px auto;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(245,245,245,1)), color-stop(30%, rgba(169,169,169,1)), to(rgba(245,245,245,1)));
+    background: -o-linear-gradient(bottom, rgba(245,245,245,1) 0%, rgba(169,169,169,1) 30%, rgba(245,245,245,1) 100%);
+    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(169,169,169,1) 30%, rgba(245,245,245,1) 100%);
+    padding: 30px 0 40px;
+    text-align: center;
+    border: solid 1px #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.banner-logo {
+    margin-bottom: 75px;
+    height: 35px;
+}
+
+.banner-productName {
+    height: 70px;
+}
+
+.banner-container {
+    position: relative;
+}
+.product-image {
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+}
+
+.product-image:hover {
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.product-price {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    display: table;
+    padding: 6px 20px;
+    background-color: var(--colorPrice);
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+}
+
+.banner-btn {
+    height: 50px;
+    width: 188px;
+    background-color: var(--colorBlack);
+    border-radius: 3px;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+    -webkit-box-shadow: 0 0 40px 40px var(--colorBlack) inset, 0 0 0 0 var(--colorBlack);
+    box-shadow: 0 0 40px 40px var(--colorBlack) inset, 0 0 0 0 var(--colorBlack);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    -webkit-box-shadow: 0 0 50px 0 var(--colorWhite) inset, 0 0 10px 4px var(--colorWhite);
+    box-shadow: 0 0 50px 0 var(--colorWhite) inset, 0 0 10px 4px var(--colorWhite);
+}
